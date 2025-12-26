@@ -1,0 +1,2434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Eya 💍 - A Love Beyond Words</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700&family=Crimson+Text:wght@400;600;700&family=Great+Vibes&family=Parisienne&family=Cinzel:wght@400;600;700&family=Marcellus&family=Tangerine:wght@400;700&family=Rouge+Script&display=swap" rel="stylesheet">
+    <style>
+        /* ====== PROFESSIONAL VARIABLES ====== */
+        :root {
+            /* Color Palette */
+            --primary-dark: #0a0819;
+            --secondary-dark: #15132e;
+            --accent-gold: #d4af37;
+            --accent-rose: #b76e79;
+            --accent-diamond: #f0f8ff;
+            --accent-velvet: #8b0000;
+            --accent-silver: #c0c0c0;
+            --accent-emerald: #50c878;
+            
+            /* Gradients */
+            --gradient-royal: linear-gradient(135deg, #0a0819 0%, #15132e 30%, #2a2560 70%, #3a3380 100%);
+            --gradient-gold: linear-gradient(135deg, #d4af37 0%, #f7ef8a 50%, #d4af37 100%);
+            --gradient-rose: linear-gradient(135deg, #b76e79 0%, #ffb7c5 50%, #b76e79 100%);
+            --gradient-diamond: linear-gradient(135deg, 
+                rgba(255, 255, 255, 0.9) 0%,
+                rgba(240, 248, 255, 0.8) 20%,
+                rgba(224, 247, 255, 0.7) 40%,
+                rgba(208, 246, 255, 0.8) 60%,
+                rgba(240, 248, 255, 0.9) 80%,
+                rgba(255, 255, 255, 1) 100%
+            );
+            
+            /* Shadows */
+            --shadow-subtle: 0 2px 4px rgba(0, 0, 0, 0.1);
+            --shadow-medium: 0 5px 15px rgba(0, 0, 0, 0.2);
+            --shadow-strong: 0 10px 30px rgba(0, 0, 0, 0.3);
+            --shadow-glow: 0 0 30px rgba(212, 175, 55, 0.3);
+            --shadow-diamond: 0 0 50px rgba(255, 255, 255, 0.5);
+            
+            /* Borders */
+            --border-radius-sm: 8px;
+            --border-radius-md: 16px;
+            --border-radius-lg: 24px;
+            --border-radius-xl: 32px;
+            --border-radius-circle: 50%;
+            
+            /* Transitions */
+            --transition-fast: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            --transition-medium: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+            --transition-slow: 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+            --transition-special: 1.2s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+            
+            /* Typography */
+            --font-heading: 'Playfair Display', serif;
+            --font-cursive: 'Great Vibes', cursive;
+            --font-elegant: 'Cinzel', serif;
+            --font-script: 'Parisienne', cursive;
+            --font-body: 'Poppins', sans-serif;
+            --font-poem: 'Crimson Text', serif;
+            --font-luxury: 'Marcellus', serif;
+            --font-romantic: 'Tangerine', cursive;
+            --font-vintage: 'Rouge Script', cursive;
+        }
+
+        /* ====== RESET & BASE STYLES ====== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+            overflow-x: hidden;
+        }
+
+        body {
+            font-family: var(--font-body);
+            background: var(--gradient-royal);
+            color: #ffffff;
+            min-height: 100vh;
+            line-height: 1.8;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: 
+                radial-gradient(circle at 20% 30%, rgba(212, 175, 55, 0.05) 0%, transparent 50%),
+                radial-gradient(circle at 80% 70%, rgba(183, 110, 121, 0.05) 0%, transparent 50%),
+                radial-gradient(circle at 40% 80%, rgba(139, 0, 0, 0.05) 0%, transparent 50%);
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        /* ====== PROFESSIONAL PASSWORD GATE ====== */
+        .password-gate {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(10, 8, 25, 0.95) 0%, rgba(21, 19, 46, 0.95) 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 10000;
+            backdrop-filter: blur(20px);
+            transition: opacity var(--transition-slow), visibility var(--transition-slow);
+            padding: 20px;
+        }
+
+        .gate-container {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(30px);
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            border-radius: var(--border-radius-xl);
+            padding: 60px 50px;
+            max-width: 600px;
+            width: 100%;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 
+                var(--shadow-strong),
+                0 0 0 1px rgba(212, 175, 55, 0.1),
+                inset 0 0 40px rgba(212, 175, 55, 0.05);
+        }
+
+        .gate-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, 
+                transparent,
+                var(--accent-gold),
+                var(--accent-rose),
+                var(--accent-gold),
+                transparent
+            );
+            animation: shimmer 3s infinite linear;
+        }
+
+        .gate-crown {
+            font-size: 4rem;
+            color: var(--accent-gold);
+            margin-bottom: 25px;
+            animation: crownGlow 3s infinite alternate;
+            filter: drop-shadow(0 0 10px rgba(212, 175, 55, 0.5));
+        }
+
+        .gate-title {
+            font-family: var(--font-cursive);
+            font-size: 4.5rem;
+            font-weight: 400;
+            background: linear-gradient(45deg, #d4af37, #f7ef8a, #d4af37);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 15px;
+            letter-spacing: 2px;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .gate-subtitle {
+            font-family: var(--font-luxury);
+            font-size: 1.3rem;
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 40px;
+            line-height: 1.6;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .password-form {
+            margin: 40px 0;
+        }
+
+        .password-input-container {
+            position: relative;
+            margin-bottom: 30px;
+        }
+
+        .password-input {
+            width: 100%;
+            padding: 18px 25px;
+            background: rgba(255, 255, 255, 0.08);
+            border: 2px solid rgba(212, 175, 55, 0.3);
+            border-radius: var(--border-radius-lg);
+            font-family: var(--font-elegant);
+            font-size: 1.1rem;
+            color: #ffffff;
+            letter-spacing: 1px;
+            transition: all var(--transition-fast);
+        }
+
+        .password-input:focus {
+            outline: none;
+            border-color: var(--accent-gold);
+            box-shadow: var(--shadow-glow);
+            background: rgba(255, 255, 255, 0.12);
+        }
+
+        .password-input::placeholder {
+            color: rgba(255, 255, 255, 0.5);
+            font-family: var(--font-body);
+            letter-spacing: normal;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 18px;
+            background: linear-gradient(135deg, 
+                rgba(212, 175, 55, 0.9) 0%,
+                rgba(183, 110, 121, 0.9) 100%
+            );
+            border: none;
+            border-radius: var(--border-radius-lg);
+            color: #ffffff;
+            font-family: var(--font-elegant);
+            font-size: 1.2rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+            cursor: pointer;
+            transition: all var(--transition-fast);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 
+                0 10px 25px rgba(212, 175, 55, 0.4),
+                0 0 30px rgba(183, 110, 121, 0.3);
+        }
+
+        .submit-btn::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, 
+                transparent,
+                rgba(255, 255, 255, 0.2),
+                transparent
+            );
+            transition: left 0.5s ease;
+        }
+
+        .submit-btn:hover::after {
+            left: 100%;
+        }
+
+        .gate-hint {
+            margin-top: 30px;
+            padding: 15px;
+            background: rgba(212, 175, 55, 0.1);
+            border-radius: var(--border-radius-sm);
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            color: var(--accent-gold);
+            font-size: 0.95rem;
+            font-family: var(--font-luxury);
+        }
+
+        /* ====== MAIN CONTENT ====== */
+        .main-content {
+            display: none;
+            width: 100%;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+            opacity: 0;
+            animation: contentFadeIn 1.5s forwards 0.5s;
+        }
+
+        /* ====== ELEGANT HEADER ====== */
+        .header {
+            text-align: center;
+            padding: 80px 40px;
+            margin: 40px auto;
+            position: relative;
+            overflow: hidden;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(212, 175, 55, 0.1);
+            border-radius: var(--border-radius-xl);
+            backdrop-filter: blur(10px);
+        }
+
+        .header-title {
+            font-family: var(--font-cursive);
+            font-size: 5.5rem;
+            font-weight: 400;
+            background: linear-gradient(45deg, 
+                #d4af37 0%,
+                #f7ef8a 30%,
+                #ffffff 50%,
+                #f7ef8a 70%,
+                #d4af37 100%
+            );
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 20px;
+            letter-spacing: 3px;
+            animation: titleGlow 4s infinite alternate;
+        }
+
+        .header-subtitle {
+            font-family: var(--font-luxury);
+            font-size: 1.6rem;
+            color: rgba(255, 255, 255, 0.9);
+            max-width: 800px;
+            margin: 0 auto 40px;
+            line-height: 1.6;
+        }
+
+        .header-quote {
+            font-family: var(--font-poem);
+            font-size: 1.3rem;
+            font-style: italic;
+            color: var(--accent-gold);
+            margin-top: 30px;
+            padding: 20px;
+            border-left: 3px solid var(--accent-rose);
+            background: rgba(212, 175, 55, 0.05);
+            border-radius: var(--border-radius-sm);
+        }
+
+        /* ====== PROFESSIONAL COUNTER ====== */
+        .counter-container {
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(212, 175, 55, 0.15);
+            border-radius: var(--border-radius-xl);
+            padding: 50px 40px;
+            margin: 60px auto;
+            max-width: 1000px;
+            backdrop-filter: blur(10px);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .counter-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: linear-gradient(90deg, 
+                transparent,
+                var(--accent-gold),
+                var(--accent-rose),
+                var(--accent-gold),
+                transparent
+            );
+        }
+
+        .counter-title {
+            font-family: var(--font-elegant);
+            font-size: 2.8rem;
+            text-align: center;
+            margin-bottom: 40px;
+            color: var(--accent-gold);
+            letter-spacing: 2px;
+        }
+
+        .counter-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            gap: 25px;
+        }
+
+        .counter-item {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            border-radius: var(--border-radius-lg);
+            padding: 30px 20px;
+            text-align: center;
+            transition: all var(--transition-fast);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .counter-item:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent-gold);
+            box-shadow: var(--shadow-glow);
+            background: rgba(255, 255, 255, 0.08);
+        }
+
+        .counter-value {
+            font-family: var(--font-heading);
+            font-size: 3.8rem;
+            font-weight: 700;
+            color: var(--accent-gold);
+            margin-bottom: 5px;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .counter-label {
+            font-family: var(--font-luxury);
+            font-size: 1rem;
+            color: rgba(255, 255, 255, 0.8);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* ====== BEAUTIFUL FLIPPING CARDS ====== */
+        .cards-section {
+            margin: 80px 0;
+        }
+
+        .section-title {
+            font-family: var(--font-elegant);
+            font-size: 3rem;
+            text-align: center;
+            margin-bottom: 50px;
+            color: var(--accent-gold);
+            position: relative;
+            padding-bottom: 20px;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 3px;
+            background: linear-gradient(90deg, 
+                transparent,
+                var(--accent-gold),
+                transparent
+            );
+        }
+
+        .cards-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 40px;
+            margin-top: 40px;
+        }
+
+        .card {
+            height: 380px;
+            perspective: 1500px;
+            cursor: pointer;
+        }
+
+        .card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            transition: transform var(--transition-medium);
+            transform-style: preserve-3d;
+            border-radius: var(--border-radius-lg);
+            box-shadow: var(--shadow-medium);
+        }
+
+        .card.flipped .card-inner {
+            transform: rotateY(180deg);
+        }
+
+        .card-front, .card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            border-radius: var(--border-radius-lg);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 40px;
+            overflow: hidden;
+        }
+
+        .card-front {
+            background: linear-gradient(135deg, 
+                rgba(212, 175, 55, 0.9) 0%,
+                rgba(183, 110, 121, 0.9) 100%
+            );
+            border: 2px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .card-back {
+            background: linear-gradient(135deg, 
+                rgba(139, 0, 0, 0.9) 0%,
+                rgba(183, 110, 121, 0.9) 100%
+            );
+            transform: rotateY(180deg);
+            border: 2px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .card-icon {
+            font-size: 4rem;
+            margin-bottom: 25px;
+            filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.3));
+            animation: iconFloat 4s ease-in-out infinite;
+        }
+
+        .card-title {
+            font-family: var(--font-script);
+            font-size: 2.2rem;
+            color: #ffffff;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .card-message {
+            font-family: var(--font-romantic);
+            font-size: 1.8rem;
+            color: #ffffff;
+            text-align: center;
+            line-height: 1.5;
+        }
+
+        /* ====== PROFESSIONAL 3D RING DESIGN ====== */
+        .ring-section {
+            margin: 100px 0;
+            padding: 60px 40px;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(212, 175, 55, 0.1);
+            border-radius: var(--border-radius-xl);
+            text-align: center;
+            backdrop-filter: blur(10px);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .ring-title {
+            font-family: var(--font-cursive);
+            font-size: 4rem;
+            color: var(--accent-gold);
+            margin-bottom: 20px;
+            animation: ringTitleGlow 3s infinite alternate;
+        }
+
+        .ring-subtitle {
+            font-family: var(--font-luxury);
+            font-size: 1.4rem;
+            color: rgba(255, 255, 255, 0.9);
+            max-width: 700px;
+            margin: 0 auto 50px;
+            line-height: 1.7;
+        }
+
+        .ring-box-container {
+            position: relative;
+            width: 400px;
+            height: 400px;
+            margin: 50px auto;
+            perspective: 2000px;
+        }
+
+        .ring-box {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            transform-style: preserve-3d;
+            transition: transform var(--transition-special);
+            cursor: pointer;
+        }
+
+        .ring-box.open {
+            transform: rotateX(-90deg);
+        }
+
+        .box-lid, .box-base {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transform-origin: bottom;
+            box-shadow: 
+                inset 0 0 40px rgba(0, 0, 0, 0.8),
+                0 20px 50px rgba(0, 0, 0, 0.6);
+        }
+
+        .box-lid {
+            background: linear-gradient(145deg, 
+                #5a0000 0%,
+                #8b0000 30%,
+                #a52a2a 70%,
+                #8b0000 100%
+            );
+            border: 15px solid #3a0000;
+            border-bottom: none;
+            border-radius: 25px 25px 0 0;
+            z-index: 2;
+        }
+
+        .box-base {
+            background: linear-gradient(145deg, 
+                #3a0000 0%,
+                #5a0000 50%,
+                #3a0000 100%
+            );
+            border: 15px solid #3a0000;
+            border-top: none;
+            border-radius: 0 0 25px 25px;
+            transform: rotateX(90deg);
+        }
+
+        .box-velvet {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            right: 20px;
+            bottom: 20px;
+            background: linear-gradient(135deg, 
+                #660000 0%,
+                #990000 50%,
+                #660000 100%
+            );
+            border-radius: 15px;
+            box-shadow: 
+                inset 0 0 50px rgba(0, 0, 0, 0.9),
+                0 0 30px rgba(139, 0, 0, 0.6);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Realistic Diamond Ring */
+        .diamond-ring {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            transform-style: preserve-3d;
+            transition: all var(--transition-special);
+            opacity: 0;
+            z-index: 10;
+        }
+
+        .ring-box.open .diamond-ring {
+            opacity: 1;
+            transform: translateY(-120px) rotateY(360deg) scale(1.1);
+        }
+
+        .ring-band {
+            position: absolute;
+            width: 180px;
+            height: 12px;
+            background: linear-gradient(90deg, 
+                #c19a53 0%,
+                #d4af37 20%,
+                #ffd700 40%,
+                #d4af37 60%,
+                #c19a53 80%,
+                #a67c00 100%
+            );
+            border-radius: 6px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            box-shadow: 
+                0 8px 25px rgba(212, 175, 55, 0.9),
+                inset 0 0 15px rgba(255, 255, 255, 0.7),
+                0 0 40px rgba(255, 215, 0, 0.7);
+            z-index: 1;
+        }
+
+        .ring-band::before {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: 10%;
+            right: 10%;
+            height: 3px;
+            background: linear-gradient(90deg, 
+                transparent,
+                rgba(255, 255, 255, 0.9),
+                transparent
+            );
+            border-radius: 1.5px;
+        }
+
+        .diamond {
+            position: absolute;
+            width: 70px;
+            height: 70px;
+            background: 
+                linear-gradient(45deg, 
+                    transparent 47%, 
+                    rgba(255, 255, 255, 0.9) 50%, 
+                    transparent 53%),
+                linear-gradient(-45deg, 
+                    transparent 47%, 
+                    rgba(255, 255, 255, 0.9) 50%, 
+                    transparent 53%),
+                var(--gradient-diamond);
+            clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            box-shadow: 
+                var(--shadow-diamond),
+                inset 0 0 40px rgba(255, 255, 255, 0.9),
+                0 0 0 2px rgba(255, 255, 255, 0.3);
+            animation: diamondSparkle 2s infinite alternate;
+            z-index: 2;
+        }
+
+        .diamond::before {
+            content: '';
+            position: absolute;
+            top: 10%;
+            left: 10%;
+            right: 10%;
+            bottom: 10%;
+            background: linear-gradient(135deg, 
+                rgba(255, 255, 255, 0.8) 0%,
+                rgba(255, 255, 255, 0.3) 50%,
+                rgba(255, 255, 255, 0.8) 100%
+            );
+            clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+            filter: blur(5px);
+        }
+
+        .ring-setting {
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            background: linear-gradient(135deg, #d4af37 0%, #ffd700 100%);
+            border-radius: 50%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            box-shadow: 0 0 20px rgba(255, 215, 0, 0.9);
+            z-index: 3;
+        }
+
+        .ring-prongs {
+            position: absolute;
+            width: 70px;
+            height: 70px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+        }
+
+        .prong {
+            position: absolute;
+            width: 4px;
+            height: 25px;
+            background: linear-gradient(to bottom, #d4af37, #ffd700);
+            border-radius: 2px;
+        }
+
+        .prong:nth-child(1) { transform: rotate(0deg) translateY(-30px); }
+        .prong:nth-child(2) { transform: rotate(72deg) translateY(-30px); }
+        .prong:nth-child(3) { transform: rotate(144deg) translateY(-30px); }
+        .prong:nth-child(4) { transform: rotate(216deg) translateY(-30px); }
+        .prong:nth-child(5) { transform: rotate(288deg) translateY(-30px); }
+
+        .ring-message {
+            margin-top: 40px;
+            font-family: var(--font-script);
+            font-size: 1.8rem;
+            color: var(--accent-gold);
+            opacity: 0;
+            transition: all var(--transition-medium);
+        }
+
+        .ring-box.open ~ .ring-message {
+            opacity: 1;
+            transform: translateY(-10px);
+        }
+
+        /* ====== MARRIAGE PROPOSAL ====== */
+        .proposal-section {
+            margin: 100px 0;
+            padding: 80px 40px;
+            background: rgba(212, 175, 55, 0.05);
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            border-radius: var(--border-radius-xl);
+            text-align: center;
+            backdrop-filter: blur(10px);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .proposal-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, 
+                transparent,
+                var(--accent-gold),
+                var(--accent-rose),
+                var(--accent-gold),
+                transparent
+            );
+        }
+
+        .proposal-title {
+            font-family: var(--font-cursive);
+            font-size: 4.5rem;
+            background: linear-gradient(45deg, 
+                #d4af37 0%,
+                #f7ef8a 30%,
+                #ffffff 50%,
+                #f7ef8a 70%,
+                #d4af37 100%
+            );
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 30px;
+            animation: proposalPulse 3s infinite alternate;
+        }
+
+        .proposal-text {
+            font-family: var(--font-luxury);
+            font-size: 1.4rem;
+            color: rgba(255, 255, 255, 0.9);
+            max-width: 800px;
+            margin: 0 auto 40px;
+            line-height: 1.8;
+        }
+
+        .question-container {
+            margin: 60px 0;
+            padding: 40px;
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: var(--border-radius-lg);
+            border: 2px solid var(--accent-gold);
+            position: relative;
+            animation: questionGlow 4s infinite alternate;
+        }
+
+        .big-question {
+            font-family: var(--font-cursive);
+            font-size: 5rem;
+            color: var(--accent-gold);
+            margin-bottom: 20px;
+        }
+
+        .our-names {
+            font-family: var(--font-elegant);
+            font-size: 2.5rem;
+            color: var(--accent-rose);
+            margin-top: 20px;
+            letter-spacing: 2px;
+        }
+
+        /* ====== WORKING NOTEPAD ====== */
+        .notepad-section {
+            margin: 80px 0;
+            padding: 60px 40px;
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(212, 175, 55, 0.15);
+            border-radius: var(--border-radius-xl);
+            backdrop-filter: blur(10px);
+        }
+
+        .notepad-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid rgba(212, 175, 55, 0.3);
+        }
+
+        .notepad-title {
+            font-family: var(--font-script);
+            font-size: 2.5rem;
+            color: var(--accent-gold);
+        }
+
+        .notepad-subtitle {
+            font-family: var(--font-luxury);
+            font-size: 1.1rem;
+            color: rgba(255, 255, 255, 0.7);
+            margin-top: 5px;
+        }
+
+        .notepad-controls {
+            display: flex;
+            gap: 15px;
+        }
+
+        .control-btn {
+            padding: 12px 25px;
+            background: rgba(212, 175, 55, 0.2);
+            border: 1px solid rgba(212, 175, 55, 0.4);
+            border-radius: var(--border-radius-sm);
+            color: var(--accent-gold);
+            font-family: var(--font-body);
+            font-weight: 500;
+            cursor: pointer;
+            transition: all var(--transition-fast);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .control-btn:hover {
+            background: rgba(212, 175, 55, 0.3);
+            transform: translateY(-2px);
+        }
+
+        .notepad-textarea {
+            width: 100%;
+            min-height: 400px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 2px solid rgba(212, 175, 55, 0.2);
+            border-radius: var(--border-radius-lg);
+            padding: 30px;
+            color: #ffffff;
+            font-family: var(--font-poem);
+            font-size: 1.2rem;
+            line-height: 1.8;
+            resize: vertical;
+            transition: all var(--transition-fast);
+        }
+
+        .notepad-textarea:focus {
+            outline: none;
+            border-color: var(--accent-gold);
+            box-shadow: var(--shadow-glow);
+            background: rgba(255, 255, 255, 0.08);
+        }
+
+        .notepad-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 0.9rem;
+        }
+
+        .save-status {
+            color: var(--accent-emerald);
+            font-weight: 500;
+            opacity: 0;
+            transition: opacity var(--transition-fast);
+        }
+
+        .save-status.show {
+            opacity: 1;
+        }
+
+        /* ====== BEAUTIFUL LETTER SECTION ====== */
+        .letter-section {
+            margin: 100px 0;
+            padding: 60px 40px;
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(212, 175, 55, 0.15);
+            border-radius: var(--border-radius-xl);
+            backdrop-filter: blur(10px);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .letter-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: 
+                url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23d4af37' fill-opacity='0.05' fill-rule='evenodd'/%3E%3C/svg%3E");
+            opacity: 0.3;
+            pointer-events: none;
+        }
+
+        .letter-content {
+            font-family: var(--font-poem);
+            font-size: 1.4rem;
+            line-height: 2;
+            color: rgba(255, 255, 255, 0.95);
+            min-height: 500px;
+            position: relative;
+            padding: 30px;
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: var(--border-radius-lg);
+            border: 1px solid rgba(212, 175, 55, 0.2);
+        }
+
+        .typing-cursor {
+            display: inline-block;
+            width: 3px;
+            height: 1.4em;
+            background-color: var(--accent-rose);
+            animation: blink 1s infinite;
+            margin-left: 5px;
+            vertical-align: text-bottom;
+        }
+
+        .letter-signature {
+            text-align: right;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(212, 175, 55, 0.3);
+        }
+
+        .signature-name {
+            font-family: var(--font-cursive);
+            font-size: 2.5rem;
+            color: var(--accent-gold);
+            margin-bottom: 5px;
+        }
+
+        .signature-date {
+            font-family: var(--font-luxury);
+            font-size: 1.1rem;
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        /* ====== POETRY SECTIONS ====== */
+        .poetry-section {
+            margin: 80px 0;
+            padding: 60px 40px;
+            background: rgba(183, 110, 121, 0.05);
+            border: 1px solid rgba(183, 110, 121, 0.2);
+            border-radius: var(--border-radius-xl);
+            backdrop-filter: blur(10px);
+        }
+
+        .poem-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .poem-arabic {
+            font-family: var(--font-poem);
+            font-size: 1.5rem;
+            line-height: 2.5;
+            direction: rtl;
+            text-align: center;
+            color: rgba(255, 255, 255, 0.95);
+            margin-bottom: 50px;
+            padding: 30px;
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: var(--border-radius-lg);
+            border-right: 4px solid var(--accent-gold);
+        }
+
+        .poem-english {
+            font-family: var(--font-poem);
+            font-size: 1.3rem;
+            line-height: 2;
+            color: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: var(--border-radius-lg);
+            border-left: 4px solid var(--accent-rose);
+        }
+
+        /* ====== ANSWER BUTTONS ====== */
+        .answer-section {
+            margin: 80px 0;
+            text-align: center;
+        }
+
+        .answer-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 40px;
+            flex-wrap: wrap;
+        }
+
+        .answer-btn {
+            padding: 20px 50px;
+            font-size: 1.4rem;
+            font-family: var(--font-elegant);
+            font-weight: 600;
+            border: none;
+            border-radius: var(--border-radius-lg);
+            cursor: pointer;
+            transition: all var(--transition-medium);
+            position: relative;
+            overflow: hidden;
+            min-width: 280px;
+            letter-spacing: 1px;
+        }
+
+        .yes-btn {
+            background: linear-gradient(135deg, var(--accent-emerald), #66bb6a);
+            color: white;
+            box-shadow: 
+                0 10px 30px rgba(80, 200, 120, 0.4),
+                inset 0 0 20px rgba(255, 255, 255, 0.3);
+        }
+
+        .yes-btn:hover {
+            transform: translateY(-5px) scale(1.05);
+            box-shadow: 
+                0 20px 50px rgba(80, 200, 120, 0.6),
+                0 0 40px rgba(80, 200, 120, 0.5);
+        }
+
+        .no-btn {
+            background: linear-gradient(135deg, #f44336, #e57373);
+            color: white;
+            box-shadow: 
+                0 10px 30px rgba(244, 67, 54, 0.4),
+                inset 0 0 20px rgba(255, 255, 255, 0.3);
+            position: relative;
+        }
+
+        .no-btn:hover {
+            transform: translateY(-5px) scale(1.05);
+            box-shadow: 
+                0 20px 50px rgba(244, 67, 54, 0.6),
+                0 0 40px rgba(244, 67, 54, 0.5);
+        }
+
+        /* ====== MUSIC PLAYER ====== */
+        .music-player {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            border-radius: 50px;
+            padding: 20px 30px;
+            display: flex;
+            align-items: center;
+            gap: 25px;
+            z-index: 1000;
+            box-shadow: var(--shadow-medium);
+        }
+
+        .song-info {
+            font-family: var(--font-luxury);
+            font-size: 1.1rem;
+            color: var(--accent-gold);
+            min-width: 200px;
+        }
+
+        .music-controls {
+            display: flex;
+            gap: 15px;
+        }
+
+        .music-btn {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: rgba(212, 175, 55, 0.2);
+            border: 2px solid rgba(212, 175, 55, 0.4);
+            color: var(--accent-gold);
+            font-size: 1.4rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all var(--transition-fast);
+        }
+
+        .music-btn:hover {
+            background: rgba(212, 175, 55, 0.3);
+            transform: scale(1.1);
+            box-shadow: var(--shadow-glow);
+        }
+
+        /* ====== ANIMATIONS ====== */
+        @keyframes shimmer {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(100%); }
+        }
+
+        @keyframes crownGlow {
+            0%, 100% { 
+                filter: drop-shadow(0 0 10px rgba(212, 175, 55, 0.5));
+                transform: scale(1);
+            }
+            50% { 
+                filter: drop-shadow(0 0 20px rgba(212, 175, 55, 0.8));
+                transform: scale(1.1);
+            }
+        }
+
+        @keyframes titleGlow {
+            0% { 
+                filter: drop-shadow(0 0 20px rgba(212, 175, 55, 0.4));
+            }
+            100% { 
+                filter: drop-shadow(0 0 40px rgba(212, 175, 55, 0.8));
+            }
+        }
+
+        @keyframes contentFadeIn {
+            to { opacity: 1; }
+        }
+
+        @keyframes iconFloat {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-15px); }
+        }
+
+        @keyframes diamondSparkle {
+            0% { 
+                filter: brightness(1) hue-rotate(0deg) drop-shadow(0 0 20px rgba(255, 255, 255, 0.5));
+            }
+            100% { 
+                filter: brightness(1.5) hue-rotate(10deg) drop-shadow(0 0 40px rgba(255, 255, 255, 0.9));
+            }
+        }
+
+        @keyframes ringTitleGlow {
+            0%, 100% { 
+                text-shadow: 0 0 20px rgba(212, 175, 55, 0.5);
+            }
+            50% { 
+                text-shadow: 0 0 30px rgba(212, 175, 55, 0.8);
+            }
+        }
+
+        @keyframes proposalPulse {
+            0% { transform: scale(1); }
+            100% { transform: scale(1.02); }
+        }
+
+        @keyframes questionGlow {
+            0%, 100% { 
+                box-shadow: 0 0 30px rgba(212, 175, 55, 0.3);
+            }
+            50% { 
+                box-shadow: 0 0 50px rgba(212, 175, 55, 0.6);
+            }
+        }
+
+        @keyframes blink {
+            0%, 50% { opacity: 1; }
+            51%, 100% { opacity: 0; }
+        }
+
+        @keyframes fall {
+            0% {
+                transform: translateY(-100px) rotate(0deg);
+                opacity: 0;
+            }
+            10% {
+                opacity: 1;
+            }
+            90% {
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(calc(100vh + 100px)) rotate(360deg);
+                opacity: 0;
+            }
+        }
+
+        /* ====== RAIN ELEMENTS ====== */
+        .rain-element {
+            position: fixed;
+            top: -100px;
+            z-index: 1;
+            pointer-events: none;
+            opacity: 0.7;
+            font-size: 30px;
+            text-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            animation: fall linear forwards;
+        }
+
+        /* ====== RESPONSIVE DESIGN ====== */
+        @media (max-width: 1200px) {
+            .ring-box-container {
+                width: 350px;
+                height: 350px;
+            }
+            
+            .header-title {
+                font-size: 4.5rem;
+            }
+            
+            .proposal-title {
+                font-size: 4rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            html {
+                font-size: 14px;
+            }
+            
+            .gate-container {
+                padding: 40px 30px;
+            }
+            
+            .gate-title {
+                font-size: 3.5rem;
+            }
+            
+            .header {
+                padding: 50px 20px;
+            }
+            
+            .header-title {
+                font-size: 3.5rem;
+            }
+            
+            .counter-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+            
+            .cards-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .ring-box-container {
+                width: 300px;
+                height: 300px;
+            }
+            
+            .proposal-title {
+                font-size: 3.5rem;
+            }
+            
+            .big-question {
+                font-size: 4rem;
+            }
+            
+            .answer-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .answer-btn {
+                min-width: 250px;
+            }
+            
+            .music-player {
+                flex-direction: column;
+                align-items: center;
+                padding: 15px;
+                bottom: 20px;
+                right: 20px;
+                min-width: 250px;
+            }
+            
+            .song-info {
+                text-align: center;
+                min-width: auto;
+            }
+            
+            .notepad-header {
+                flex-direction: column;
+                gap: 20px;
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header-title {
+                font-size: 2.8rem;
+            }
+            
+            .counter-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .counter-value {
+                font-size: 3rem;
+            }
+            
+            .ring-box-container {
+                width: 250px;
+                height: 250px;
+            }
+            
+            .diamond {
+                width: 50px;
+                height: 50px;
+            }
+            
+            .proposal-title {
+                font-size: 2.8rem;
+            }
+            
+            .big-question {
+                font-size: 3rem;
+            }
+            
+            .gate-title {
+                font-size: 2.8rem;
+            }
+        }
+
+        /* ====== UTILITY CLASSES ====== */
+        .text-center { text-align: center; }
+        .mt-1 { margin-top: 1rem; }
+        .mt-2 { margin-top: 2rem; }
+        .mt-3 { margin-top: 3rem; }
+        .mb-1 { margin-bottom: 1rem; }
+        .mb-2 { margin-bottom: 2rem; }
+        .mb-3 { margin-bottom: 3rem; }
+        .py-2 { padding-top: 2rem; padding-bottom: 2rem; }
+        .px-2 { padding-left: 2rem; padding-right: 2rem; }
+        .w-100 { width: 100%; }
+        .h-100 { height: 100%; }
+        .d-flex { display: flex; }
+        .align-center { align-items: center; }
+        .justify-center { justify-content: center; }
+        .justify-between { justify-content: space-between; }
+        .flex-column { flex-direction: column; }
+        .flex-wrap { flex-wrap: wrap; }
+        .gap-1 { gap: 1rem; }
+        .gap-2 { gap: 2rem; }
+        .gap-3 { gap: 3rem; }
+        .position-relative { position: relative; }
+        .position-absolute { position: absolute; }
+        .overflow-hidden { overflow: hidden; }
+        .cursor-pointer { cursor: pointer; }
+        .transition-all { transition: all var(--transition-fast); }
+        .opacity-0 { opacity: 0; }
+        .opacity-50 { opacity: 0.5; }
+        .opacity-100 { opacity: 1; }
+        .scale-1 { transform: scale(1); }
+        .scale-1-1 { transform: scale(1.1); }
+        .rotate-0 { transform: rotate(0deg); }
+        .rotate-90 { transform: rotate(90deg); }
+        .rotate-180 { transform: rotate(180deg); }
+        .rotate-360 { transform: rotate(360deg); }
+        .translate-y-0 { transform: translateY(0); }
+        .translate-y--5 { transform: translateY(-5px); }
+        .translate-y--10 { transform: translateY(-10px); }
+        .translate-y--20 { transform: translateY(-20px); }
+        .translate-x-0 { transform: translateX(0); }
+        .translate-x--5 { transform: translateX(-5px); }
+        .translate-x-5 { transform: translateX(5px); }
+        .translate-x--10 { transform: translateX(-10px); }
+        .translate-x-10 { transform: translateX(10px); }
+        .translate-x--20 { transform: translateX(-20px); }
+        .translate-x-20 { transform: translateX(20px); }
+        .translate-x--50 { transform: translateX(-50%); }
+        .translate-x-50 { transform: translateX(50%); }
+        .translate-y--50 { transform: translateY(-50%); }
+        .translate-y-50 { transform: translateY(50%); }
+        .translate--50 { transform: translate(-50%, -50%); }
+        .translate-50 { transform: translate(50%, 50%); }
+        .d-none { display: none; }
+        .d-block { display: block; }
+        .d-inline { display: inline; }
+        .d-inline-block { display: inline-block; }
+        .d-flex { display: flex; }
+        .d-grid { display: grid; }
+        .d-inline-flex { display: inline-flex; }
+        .d-inline-grid { display: inline-grid; }
+        .d-table { display: table; }
+        .d-table-row { display: table-row; }
+        .d-table-cell { display: table-cell; }
+        .d-contents { display: contents; }
+        .d-list-item { display: list-item; }
+        .d-initial { display: initial; }
+        .d-inherit { display: inherit; }
+    </style>
+</head>
+<body>
+    <!-- Professional Password Gate -->
+    <div class="password-gate" id="passwordGate">
+        <div class="gate-container">
+            <div class="gate-crown">
+                <i class="fas fa-crown"></i>
+            </div>
+            <h1 class="gate-title">For My Beloved Eya 👑</h1>
+            <p class="gate-subtitle">Enter our sacred sanctuary of love, where every moment is a precious memory waiting to be cherished forever.</p>
+            
+            <form class="password-form" id="passwordForm">
+                <div class="password-input-container">
+                    <input type="password" class="password-input" id="passwordInput" 
+                           placeholder="Enter the key to my heart..." required>
+                </div>
+                <button type="submit" class="submit-btn">Unlock Eternal Love ❤️</button>
+            </form>
+            
+            <div class="gate-hint">
+                <i class="fas fa-lightbulb"></i> Hint: You and me in a little size
+            </div>
+        </div>
+    </div>
+    
+    <!-- Main Content -->
+    <div class="main-content" id="mainContent">
+        <!-- Elegant Header -->
+        <header class="header">
+            <h1 class="header-title">My Eternal Moonlight 🌙</h1>
+            <p class="header-subtitle">For My Precious Eya - 1 Year, 46 Days, and Counting... Every Moment With You Is A Treasure Beyond Measure</p>
+            
+            <div class="header-quote">
+                "In your eyes, I found my home. In your heart, I found my peace. In your soul, I found my eternity."
+            </div>
+        </header>
+        
+        <!-- Professional Counter -->
+        <section class="counter-container">
+            <h2 class="counter-title">Our Timeless Journey Together ⏳</h2>
+            <div class="counter-grid">
+                <div class="counter-item">
+                    <div class="counter-value" id="years">1</div>
+                    <div class="counter-label">Years of Love</div>
+                </div>
+                <div class="counter-item">
+                    <div class="counter-value" id="months">0</div>
+                    <div class="counter-label">Months Together</div>
+                </div>
+                <div class="counter-item">
+                    <div class="counter-value" id="days">46</div>
+                    <div class="counter-label">Days of Joy</div>
+                </div>
+                <div class="counter-item">
+                    <div class="counter-value" id="hours">00</div>
+                    <div class="counter-label">Hours Shared</div>
+                </div>
+                <div class="counter-item">
+                    <div class="counter-value" id="minutes">00</div>
+                    <div class="counter-label">Minutes Together</div>
+                </div>
+                <div class="counter-item">
+                    <div class="counter-value" id="seconds">00</div>
+                    <div class="counter-label">Seconds Cherished</div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Beautiful Flipping Cards -->
+        <section class="cards-section">
+            <h2 class="section-title">Whispers From My Heart 💌</h2>
+            <div class="cards-container">
+                <!-- Card 1 -->
+                <div class="card" id="card1">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="card-icon">🎁</div>
+                            <h3 class="card-title">My Precious Gift</h3>
+                            <p>Touch to unveil your worth</p>
+                        </div>
+                        <div class="card-back">
+                            <div class="card-icon">💝</div>
+                            <p class="card-message">I seek no treasures from this earth, for you, my Eya, are the most precious gift the universe has bestowed upon me.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Card 2 -->
+                <div class="card" id="card2">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="card-icon">👑</div>
+                            <h3 class="card-title">My Royal Queen</h3>
+                            <p>Touch to see your throne</p>
+                        </div>
+                        <div class="card-back">
+                            <div class="card-icon">✨</div>
+                            <p class="card-message">My beautiful Eya, do you comprehend the radiance you bring? You are royalty, and I am but a humble servant to your grace.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Card 3 -->
+                <div class="card" id="card3">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="card-icon">💕</div>
+                            <h3 class="card-title">Our Eternal Bond</h3>
+                            <p>Touch to see forever</p>
+                        </div>
+                        <div class="card-back">
+                            <div class="card-icon">∞</div>
+                            <p class="card-message">Aylin and Noah are but the beginning of our legacy. Together, we shall write a love story that echoes through eternity.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Professional 3D Ring Section -->
+        <section class="ring-section">
+            <h2 class="ring-title">A Promise For Eternity 💍</h2>
+            <p class="ring-subtitle">My dearest Eya, within this box lies more than a ring. It holds my heart, my soul, and all my tomorrows, waiting to be shared with you forever.</p>
+            
+            <div class="ring-box-container">
+                <div class="ring-box" id="ringBox">
+                    <div class="box-lid">
+                        <div class="box-velvet">
+                            <p style="font-family: var(--font-script); color: white; font-size: 1.5rem;">
+                                Open to discover your destiny...
+                            </p>
+                        </div>
+                    </div>
+                    <div class="box-base">
+                        <div class="box-velvet">
+                            <div class="diamond-ring">
+                                <div class="ring-band"></div>
+                                <div class="diamond"></div>
+                                <div class="ring-setting"></div>
+                                <div class="ring-prongs">
+                                    <div class="prong"></div>
+                                    <div class="prong"></div>
+                                    <div class="prong"></div>
+                                    <div class="prong"></div>
+                                    <div class="prong"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <p class="ring-message" id="ringMessage">A symbol of eternal commitment, crafted with all the love in my heart.</p>
+        </section>
+        
+        <!-- Marriage Proposal Section -->
+        <section class="proposal-section">
+            <h2 class="proposal-title">The Question That Completes Me</h2>
+            
+            <p class="proposal-text">
+                My beautiful Eya, from the moment our souls intertwined, I knew I had found my home. 
+                You are not merely my love; you are my sanctuary, my strength, and the very essence of my being. 
+                Together, we have created miracles named Aylin and Noah, and now I wish to create a forever with you.
+            </p>
+            
+            <div class="question-container">
+                <h1 class="big-question">Will You Marry Me, Eya?</h1>
+                <p class="proposal-text">
+                    Will you walk with me through all of life's seasons? Will you be my partner in every dream, 
+                    my comfort in every storm, and my joy in every sunrise? Will you allow me the honor of calling you my wife?
+                </p>
+                
+                <div class="our-names">
+                    Mhdy & Eya
+                </div>
+            </div>
+        </section>
+        
+        <!-- Answer Buttons -->
+        <section class="answer-section">
+            <div class="answer-buttons">
+                <button class="answer-btn yes-btn" id="yesBtn">
+                    <i class="fas fa-heart"></i> YES! A Thousand Times Yes!
+                </button>
+                <button class="answer-btn no-btn" id="noBtn">
+                    <i class="fas fa-running"></i> Try to Catch Me!
+                </button>
+            </div>
+        </section>
+        
+        <!-- Working Notepad -->
+        <section class="notepad-section">
+            <div class="notepad-header">
+                <div>
+                    <h2 class="notepad-title">Our Eternal Love Diary 📖</h2>
+                    <p class="notepad-subtitle">Every memory, every whisper, every moment - preserved forever in our sacred space.</p>
+                </div>
+                <div class="notepad-controls">
+                    <button class="control-btn" id="saveBtn">
+                        <i class="fas fa-save"></i> Save
+                    </button>
+                    <button class="control-btn" id="clearBtn">
+                        <i class="fas fa-trash"></i> Clear
+                    </button>
+                </div>
+            </div>
+            
+            <textarea class="notepad-textarea" id="memoryNotepad" 
+                      placeholder="My Dearest Eya,
+
+Begin our story here...
+
+Today, you illuminated my world when...
+Remember when we first...
+Our precious children, Aylin and Noah...
+The way you laugh when...
+Our dreams for tomorrow...
+The little things I adore about you...
+Promises I make to you forever...
+
+Write freely, my love. Every word is a treasure."></textarea>
+            
+            <div class="notepad-footer">
+                <div class="char-count">
+                    <i class="fas fa-keyboard"></i> 
+                    Characters: <span id="charCount">0</span> | 
+                    Words: <span id="wordCount">0</span>
+                </div>
+                <div class="save-status" id="saveStatus">
+                    <i class="fas fa-check-circle"></i> Saved
+                </div>
+                <div class="last-saved">
+                    Last saved: <span id="lastSaved">Never</span>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Beautiful Letter Section -->
+        <section class="letter-section">
+            <h2 class="section-title">From The Depths Of My Soul 💝</h2>
+            <div class="letter-content" id="letterContent">
+                <span class="typing-cursor"></span>
+            </div>
+            
+            <div class="letter-signature">
+                <div class="signature-name">Your Eternal Mhdy</div>
+                <div class="signature-date">Forever Yours</div>
+            </div>
+        </section>
+        
+        <!-- Poetry Sections -->
+        <section class="poetry-section">
+            <h2 class="section-title">Poetry For My Beloved 🌹</h2>
+            <div class="poem-container">
+                <div class="poem-arabic">
+                    واذا رأيتُكِ تضحكِينَ تبسُماً<br>
+                    ذَهَبتْ هُمُومُ مشاغِلي وعَنائي<br>
+                    كأنَ نورَ الشَمسِ فاضَ بِوجهكِ<br>
+                    واظاءَ ليلي في صباحِ رجائي<br>
+                    ماكُنتِ مثلَ العابرينَ فأِنَهمْ<br>
+                    مَرُوا عليَّ وانتِ سُرتِ خلالي
+                </div>
+                
+                <div class="poem-english">
+                    When I behold your smile, radiant and pure,<br>
+                    All my burdens and worries fade away, sure.<br>
+                    As if the sunlight overflows from your face,<br>
+                    Illuminating my night with hope's gentle grace.<br>
+                    You are not like those who merely pass by,<br>
+                    You have walked through me, reaching the sky.<br><br>
+                    
+                    In your eyes, I find galaxies unexplored,<br>
+                    In your heart, treasures forever stored.<br>
+                    Your laughter is the melody my soul knows best,<br>
+                    In your love, I have found eternal rest.<br>
+                    With you, every moment is a precious art,<br>
+                    Forever entwined, never to part.
+                </div>
+            </div>
+        </section>
+        
+        <!-- Music Player -->
+        <div class="music-player">
+            <div class="song-info" id="songInfo">
+                <i class="fas fa-music"></i> Our Song: Golden Brown
+            </div>
+            <div class="music-controls">
+                <button class="music-btn" id="playBtn">
+                    <i class="fas fa-play"></i>
+                </button>
+                <button class="music-btn" id="pauseBtn">
+                    <i class="fas fa-pause"></i>
+                </button>
+                <button class="music-btn" id="switchBtn">
+                    <i class="fas fa-exchange-alt"></i>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Rain elements will be created by JavaScript -->
+    </div>
+    
+    <!-- Audio Elements -->
+    <audio id="backgroundMusic1" loop>
+        <source src="𝙂𝙤𝙡𝙙𝙚𝙣 𝘽𝙧𝙤𝙬𝙣 - 𝙏𝙝𝙚 𝙎𝙩𝙧𝙖𝙣𝙜𝙡𝙚𝙧𝙨 (𝙎𝙡𝙤𝙬𝙚𝙙 - 𝙍𝙚𝙫𝙚𝙧𝙗)  𝘽𝙚𝙨𝙩 𝙋𝙖𝙧𝙩  𝙏𝙞𝙠𝙏𝙤𝙠 𝙑𝙚𝙧𝙨𝙞𝙤𝙣.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="backgroundMusic2" loop>
+        <source src="JONY - Love your voice.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="romanticMusic" loop>
+        <source src="EMIN feat. JONY - КАМИН.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="proposalMusic">
+        <source src="https://assets.mixkit.co/music/preview/mixkit-wedding-day-476.mp3" type="audio/mpeg">
+    </audio>
+
+    <script>
+        // ====== EXTENSIVE JAVASCRIPT ======
+        
+        // Professional Password Gate
+        const passwordGate = document.getElementById('passwordGate');
+        const mainContent = document.getElementById('mainContent');
+        const passwordForm = document.getElementById('passwordForm');
+        const passwordInput = document.getElementById('passwordInput');
+        const correctPassword = "aylin&noah";
+        
+        passwordForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            const userInput = passwordInput.value.trim();
+            
+            if (userInput.toLowerCase() === correctPassword.toLowerCase()) {
+                // Professional transition
+                passwordGate.style.opacity = '0';
+                passwordGate.style.transform = 'scale(1.1)';
+                
+                setTimeout(() => {
+                    passwordGate.style.display = 'none';
+                    mainContent.style.display = 'block';
+                    
+                    // Start all features
+                    startAllFeatures();
+                    createConfettiEffect();
+                    
+                }, 1000);
+                
+            } else {
+                // Professional error effect
+                passwordInput.style.borderColor = '#ff3333';
+                passwordInput.style.animation = 'shake 0.5s';
+                passwordInput.style.boxShadow = '0 0 20px rgba(255, 51, 51, 0.3)';
+                
+                setTimeout(() => {
+                    passwordInput.style.borderColor = 'rgba(212, 175, 55, 0.3)';
+                    passwordInput.style.animation = '';
+                    passwordInput.style.boxShadow = '';
+                }, 500);
+                
+                passwordInput.value = '';
+                passwordInput.placeholder = 'Whisper our secret once more, my love...';
+            }
+        });
+        
+        // Enhanced Counter
+        function startCounter() {
+            const startDate = new Date();
+            startDate.setFullYear(startDate.getFullYear() - 1);
+            startDate.setDate(startDate.getDate() - 46);
+            
+            function updateCounter() {
+                const now = new Date();
+                const diff = now - startDate;
+                
+                const seconds = Math.floor(diff / 1000) % 60;
+                const minutes = Math.floor(diff / (1000 * 60)) % 60;
+                const hours = Math.floor(diff / (1000 * 60 * 60)) % 24;
+                const days = Math.floor(diff / (1000 * 60 * 60 * 24)) % 30;
+                const months = Math.floor(diff / (1000 * 60 * 60 * 24 * 30)) % 12;
+                const years = Math.floor(diff / (1000 * 60 * 60 * 24 * 365));
+                
+                // Update with animation
+                updateValueWithAnimation('years', years + 1);
+                updateValueWithAnimation('months', months);
+                updateValueWithAnimation('days', days);
+                updateValueWithAnimation('hours', hours.toString().padStart(2, '0'));
+                updateValueWithAnimation('minutes', minutes.toString().padStart(2, '0'));
+                updateValueWithAnimation('seconds', seconds.toString().padStart(2, '0'));
+            }
+            
+            function updateValueWithAnimation(id, value) {
+                const element = document.getElementById(id);
+                if (element.textContent !== value.toString()) {
+                    element.style.transform = 'scale(1.2)';
+                    element.style.color = '#f7ef8a';
+                    setTimeout(() => {
+                        element.textContent = value;
+                        element.style.transform = 'scale(1)';
+                        element.style.color = '#d4af37';
+                    }, 150);
+                }
+            }
+            
+            updateCounter();
+            setInterval(updateCounter, 1000);
+        }
+        
+        // Professional Ring Box
+        const ringBox = document.getElementById('ringBox');
+        const ringMessage = document.getElementById('ringMessage');
+        
+        ringBox.addEventListener('click', function() {
+            if (!this.classList.contains('open')) {
+                this.classList.add('open');
+                
+                // Play romantic music
+                const romanticAudio = document.getElementById('romanticMusic');
+                romanticAudio.volume = 0.7;
+                romanticAudio.play().catch(e => console.log("Music:", e));
+                
+                // Update message
+                ringMessage.textContent = "For my Eya, a symbol of eternal devotion...";
+                
+                // Create diamond sparkles
+                createDiamondSparkles();
+                
+                // Auto-scroll to proposal
+                setTimeout(() => {
+                    document.querySelector('.proposal-section').scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'center'
+                    });
+                }, 2000);
+            }
+        });
+        
+        // Professional Notepad
+        const memoryNotepad = document.getElementById('memoryNotepad');
+        const saveBtn = document.getElementById('saveBtn');
+        const clearBtn = document.getElementById('clearBtn');
+        const charCount = document.getElementById('charCount');
+        const wordCount = document.getElementById('wordCount');
+        const saveStatus = document.getElementById('saveStatus');
+        const lastSaved = document.getElementById('lastSaved');
+        
+        // Load saved notes
+        function loadSavedNotes() {
+            const savedNotes = localStorage.getItem('eya_love_diary');
+            if (savedNotes) {
+                memoryNotepad.value = savedNotes;
+                updateCounts();
+                updateLastSaved();
+            }
+        }
+        
+        // Save notes
+        function saveNotes() {
+            const notes = memoryNotepad.value;
+            localStorage.setItem('eya_love_diary', notes);
+            localStorage.setItem('eya_diary_last_saved', new Date().toLocaleString());
+            
+            // Show save status
+            saveStatus.classList.add('show');
+            setTimeout(() => {
+                saveStatus.classList.remove('show');
+            }, 2000);
+            
+            updateLastSaved();
+            updateCounts();
+        }
+        
+        // Clear notes with confirmation
+        function clearNotes() {
+            if (confirm('My love, are you certain you wish to clear our beautiful memories? This cannot be undone.')) {
+                memoryNotepad.value = '';
+                localStorage.removeItem('eya_love_diary');
+                localStorage.removeItem('eya_diary_last_saved');
+                updateCounts();
+                updateLastSaved();
+                
+                // Show cleared message
+                saveStatus.innerHTML = '<i class="fas fa-trash"></i> Cleared';
+                saveStatus.classList.add('show');
+                setTimeout(() => {
+                    saveStatus.innerHTML = '<i class="fas fa-check-circle"></i> Saved';
+                    saveStatus.classList.remove('show');
+                }, 2000);
+            }
+        }
+        
+        // Update character and word counts
+        function updateCounts() {
+            const text = memoryNotepad.value;
+            charCount.textContent = text.length;
+            wordCount.textContent = text.trim() === '' ? 0 : text.trim().split(/\s+/).length;
+        }
+        
+        // Update last saved time
+        function updateLastSaved() {
+            const savedTime = localStorage.getItem('eya_diary_last_saved');
+            lastSaved.textContent = savedTime || 'Never';
+        }
+        
+        // Auto-save functionality
+        let autoSaveTimer;
+        memoryNotepad.addEventListener('input', function() {
+            updateCounts();
+            clearTimeout(autoSaveTimer);
+            autoSaveTimer = setTimeout(saveNotes, 2000);
+        });
+        
+        saveBtn.addEventListener('click', saveNotes);
+        clearBtn.addEventListener('click', clearNotes);
+        
+        // Professional Letter Typing Effect
+        function startTypingLetter() {
+            const letterContent = document.getElementById('letterContent');
+            const fullText = `My Dearest Eya, My Eternal Love,
+
+As I sit to compose this letter, I find myself overwhelmed by the magnitude of emotions you evoke within me. Words, no matter how eloquent, seem insufficient to capture the depth of my affection for you. Yet, I shall try, for you deserve to know the truth of my heart.
+
+From the moment our paths intertwined, my existence transformed. You entered my life not as a mere presence, but as a revelation—a brilliant light that illuminated every corner of my being. Before you, I wandered through life in shades of gray; you brought with you every color of the rainbow, every hue of emotion, every tint of joy.
+
+Our journey of one year and forty-six days has been nothing short of miraculous. Each day with you is a precious gem in the necklace of our love. I cherish every memory: our first conversation that felt like coming home, our shared laughter that echoes in my soul, our quiet moments that speak volumes, our dreams woven together like golden threads.
+
+What captivates me most about you, my beloved Eya, is not merely your breathtaking beauty—though you are the most exquisite creature I have ever beheld—but the extraordinary person you are within. Your kindness is a gentle rain that nourishes every soul it touches. Your strength is an oak tree, standing firm through life's storms. Your intelligence illuminates conversations, your compassion heals wounds, and your spirit radiates warmth that melts even the coldest of hearts.
+
+You are my moonlight in the darkest nights, guiding me home when I am lost. You are my sunlight at dawn, filling my world with warmth and promise. You are the anchor that grounds me and the wings that help me soar. In your eyes, I have found my reflection—the man I aspire to be. In your heart, I have found my sanctuary—a place of unconditional acceptance and love. In your soul, I have found my counterpart—the missing piece that makes me whole.
+
+I want you to know, my precious Eya, that I see you—truly see you. I see your dreams and wish to help you achieve every single one. I see your fears and yearn to protect you from them. I see your past and desire to heal any lingering wounds. I see your present and cherish every moment. I see our future and envision it filled with laughter, growth, and endless love.
+
+Our beautiful children, Aylin and Noah, are living testaments to our love. They are the stars born from our constellation, the miracles created from our union. As we watch them grow, I see your gentle spirit reflected in their eyes, your loving nature in their smiles.
+
+And so, my beloved, as I ask you the most important question of my life, know that it comes from the deepest recesses of my soul. You have transformed me, completed me, and given my life meaning beyond measure. I cannot imagine a single day without you by my side.
+
+I promise you this: I will love you more today than yesterday, but less than tomorrow. I will be your shelter in every storm and your celebration in every sunshine. I will honor you, cherish you, and respect you until my last breath and beyond. I will build with you a home filled with laughter, understanding, and endless cups of tea shared in comfortable silence.
+
+Eya, my eternal moonlight, will you do me the extraordinary honor of becoming my wife? Will you walk with me through all of life's seasons? Will you allow me to spend eternity proving my love to you?
+
+With all the love in my heart, now and forever,
+
+Your Eternal Mhdy ❤️`;
+            
+            let i = 0;
+            const speed = 20; // Typing speed in milliseconds
+            
+            function typeWriter() {
+                if (i < fullText.length) {
+                    // Remove cursor temporarily
+                    const cursor = letterContent.querySelector('.typing-cursor');
+                    if (cursor) cursor.remove();
+                    
+                    // Add next character with smooth reveal
+                    const nextChar = fullText.charAt(i);
+                    letterContent.innerHTML += nextChar === '\n' ? '<br>' : nextChar;
+                    
+                    // Add cursor back
+                    const newCursor = document.createElement('span');
+                    newCursor.className = 'typing-cursor';
+                    letterContent.appendChild(newCursor);
+                    
+                    i++;
+                    
+                    // Scroll to keep cursor in view
+                    letterContent.scrollTop = letterContent.scrollHeight;
+                    
+                    // Continue typing
+                    setTimeout(typeWriter, speed);
+                } else {
+                    // Remove cursor when done
+                    const cursor = letterContent.querySelector('.typing-cursor');
+                    if (cursor) cursor.remove();
+                }
+            }
+            
+            // Start typing when letter section is in view
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        typeWriter();
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.3, rootMargin: '100px' });
+            
+            observer.observe(document.querySelector('.letter-section'));
+        }
+        
+        // Professional Music Player
+        function startMusicPlayer() {
+            const music1 = document.getElementById('backgroundMusic1');
+            const music2 = document.getElementById('backgroundMusic2');
+            const romanticMusic = document.getElementById('romanticMusic');
+            const playBtn = document.getElementById('playBtn');
+            const pauseBtn = document.getElementById('pauseBtn');
+            const switchBtn = document.getElementById('switchBtn');
+            const songInfo = document.getElementById('songInfo');
+            
+            let currentMusic = romanticMusic;
+            let isPlaying = false;
+            let currentSongIndex = 0;
+            const songs = [
+                { audio: romanticMusic, name: "Our Melody: Eternal Love ❤️" },
+                { audio: music1, name: "Golden Brown: Our Theme 🌙" },
+                { audio: music2, name: "Love Your Voice: For Eya 🎵" }
+            ];
+            
+            // Initialize audio
+            songs.forEach(song => {
+                song.audio.volume = 0.6;
+                song.audio.preload = 'auto';
+            });
+            
+            // Mobile audio unlock
+            const unlockAudio = () => {
+                if (!isPlaying) {
+                    currentMusic.play().then(() => {
+                        isPlaying = true;
+                        updateMusicButtons();
+                    }).catch(e => console.log("Awaiting interaction..."));
+                    
+                    document.removeEventListener('click', unlockAudio);
+                    document.removeEventListener('touchstart', unlockAudio);
+                }
+            };
+            
+            document.addEventListener('click', unlockAudio);
+            document.addEventListener('touchstart', unlockAudio);
+            
+            // Button functionality
+            playBtn.addEventListener('click', function() {
+                if (!isPlaying) {
+                    currentMusic.play();
+                    isPlaying = true;
+                    updateMusicButtons();
+                    this.style.transform = 'scale(1.2) rotate(360deg)';
+                    setTimeout(() => this.style.transform = 'scale(1.1)', 300);
+                }
+            });
+            
+            pauseBtn.addEventListener('click', function() {
+                if (isPlaying) {
+                    currentMusic.pause();
+                    isPlaying = false;
+                    updateMusicButtons();
+                    this.style.transform = 'scale(1.2) rotate(-360deg)';
+                    setTimeout(() => this.style.transform = 'scale(1.1)', 300);
+                }
+            });
+            
+            switchBtn.addEventListener('click', function() {
+                currentMusic.pause();
+                currentSongIndex = (currentSongIndex + 1) % songs.length;
+                currentMusic = songs[currentSongIndex].audio;
+                songInfo.textContent = songs[currentSongIndex].name;
+                
+                if (isPlaying) {
+                    currentMusic.play();
+                }
+                
+                this.style.transform = 'scale(1.2) rotate(180deg)';
+                setTimeout(() => this.style.transform = 'scale(1.1)', 300);
+            });
+            
+            function updateMusicButtons() {
+                if (isPlaying) {
+                    playBtn.innerHTML = '<i class="fas fa-volume-up"></i>';
+                    playBtn.style.background = 'rgba(80, 200, 120, 0.3)';
+                } else {
+                    playBtn.innerHTML = '<i class="fas fa-play"></i>';
+                    playBtn.style.background = 'rgba(212, 175, 55, 0.2)';
+                }
+            }
+            
+            // Attempt auto-play
+            setTimeout(() => {
+                romanticMusic.play().then(() => {
+                    isPlaying = true;
+                    updateMusicButtons();
+                }).catch(e => console.log("Auto-play requires interaction"));
+            }, 1500);
+        }
+        
+        // Flipping Cards
+        function setupFlippingCards() {
+            document.querySelectorAll('.card').forEach(card => {
+                card.addEventListener('click', function() {
+                    this.classList.toggle('flipped');
+                    
+                    // Add subtle sound effect
+                    const flipSound = new Audio('data:audio/wav;base64,UklGRigAAABXQVZFZm10IBIAAAABAAEARKwAAIhYAQACABAAZGF0YQQAAAAAAA==');
+                    flipSound.volume = 0.1;
+                    flipSound.play().catch(e => {});
+                });
+            });
+        }
+        
+        // Proposal Answer Buttons
+        const yesBtn = document.getElementById('yesBtn');
+        const noBtn = document.getElementById('noBtn');
+        const proposalMusic = document.getElementById('proposalMusic');
+        
+        yesBtn.addEventListener('click', function() {
+            // Celebration effects
+            createFireworks();
+            createHeartsRain(100);
+            
+            // Update ring message
+            ringMessage.textContent = "Eya Said YES! 💍 Forever Begins Now!";
+            ringMessage.style.color = '#50c878';
+            ringMessage.style.fontSize = '2rem';
+            
+            // Play celebration music
+            proposalMusic.volume = 0.8;
+            proposalMusic.play().catch(e => console.log("Celebration music:", e));
+            
+            // Show celebration message
+            const celebrationMessage = `🎉🎊 EYA SAID YES! 🎊🎉
+
+My dearest Eya, you have made me the happiest man in all existence!
+
+In this moment, I vow to you:
+
+✨ To love you more each day than the day before
+✨ To honor you as my queen, my partner, my everything
+✨ To build with you a life of joy, laughter, and endless love
+✨ To be your shelter in every storm and your sunshine in every day
+✨ To cherish our precious children, Aylin and Noah, and watch them grow in our love
+✨ To grow old with you, hand in hand, heart in heart
+
+From this day forward, you are not just my love, but my wife, my eternity.
+
+With all my soul,
+Your Mhdy 💍❤️`;
+
+            alert(celebrationMessage);
+            
+            // Save the proposal acceptance to notepad
+            const savedNotes = localStorage.getItem('eya_love_diary') || '';
+            const proposalNote = `\n\n💍 ${new Date().toLocaleDateString()} - Eya said YES to my marriage proposal! 
+The most glorious moment of my existence! 
+I am now the happiest man alive, blessed to call you my future wife. 
+Our forever begins today. 
+With eternal love, Mhdy ❤️`;
+            
+            localStorage.setItem('eya_love_diary', savedNotes + proposalNote);
+            memoryNotepad.value = savedNotes + proposalNote;
+            updateCounts();
+        });
+        
+        noBtn.addEventListener('mouseover', function() {
+            // Move button randomly
+            const maxX = window.innerWidth - this.offsetWidth - 20;
+            const maxY = window.innerHeight - this.offsetHeight - 20;
+            
+            const randomX = Math.floor(Math.random() * maxX);
+            const randomY = Math.floor(Math.random() * maxY);
+            
+            this.style.position = 'fixed';
+            this.style.left = `${randomX}px`;
+            this.style.top = `${randomY}px`;
+            this.style.zIndex = '1000';
+            this.style.transition = 'all 0.8s cubic-bezier(0.68, -0.55, 0.27, 1.55)';
+            
+            // Change text
+            const messages = [
+                "You have to say YES! 💖",
+                "Just kidding! Click YES! 😘",
+                "I'm playing hard to get! 😊",
+                "Okay fine, I'll say YES! 💍"
+            ];
+            
+            this.textContent = messages[Math.floor(Math.random() * messages.length)];
+            this.style.background = 'linear-gradient(135deg, #FF9800, #FFB74D)';
+            this.style.borderColor = '#F57C00';
+            
+            // Reset after delay
+            setTimeout(() => {
+                this.style.position = '';
+                this.style.left = '';
+                this.style.top = '';
+                this.style.zIndex = '';
+                this.textContent = 'Try to Catch Me!';
+                this.style.background = 'linear-gradient(135deg, #f44336, #e57373)';
+                this.style.borderColor = '#d32f2f';
+            }, 3000);
+        });
+        
+        // Special Effects
+        function createDiamondSparkles() {
+            for (let i = 0; i < 30; i++) {
+                setTimeout(() => {
+                    const sparkle = document.createElement('div');
+                    sparkle.innerHTML = '✨';
+                    sparkle.style.position = 'absolute';
+                    sparkle.style.fontSize = `${10 + Math.random() * 20}px`;
+                    sparkle.style.left = `${40 + Math.random() * 20}%`;
+                    sparkle.style.top = `${40 + Math.random() * 20}%`;
+                    sparkle.style.zIndex = '1000';
+                    sparkle.style.pointerEvents = 'none';
+                    sparkle.style.animation = `sparkleFloat ${1 + Math.random() * 2}s ease-out forwards`;
+                    sparkle.style.opacity = '0.8';
+                    
+                    document.querySelector('.ring-box-container').appendChild(sparkle);
+                    
+                    setTimeout(() => {
+                        if (sparkle.parentNode) sparkle.parentNode.removeChild(sparkle);
+                    }, 3000);
+                }, i * 50);
+            }
+        }
+        
+        function createFireworks() {
+            for (let i = 0; i < 25; i++) {
+                setTimeout(() => {
+                    const firework = document.createElement('div');
+                    firework.style.position = 'fixed';
+                    firework.style.left = `${Math.random() * 100}vw`;
+                    firework.style.top = `${Math.random() * 100}vh`;
+                    firework.style.zIndex = '9998';
+                    firework.style.pointerEvents = 'none';
+                    firework.style.width = '8px';
+                    firework.style.height = '8px';
+                    firework.style.borderRadius = '50%';
+                    firework.style.background = `radial-gradient(circle, 
+                        ${['#ff0000', '#00ff00', '#0000ff', '#ffff00', '#ff00ff', '#d4af37'][Math.floor(Math.random() * 6)]} 0%, 
+                        transparent 70%)`;
+                    firework.style.boxShadow = '0 0 15px currentColor';
+                    firework.style.animation = `fireworkExplode 1s ease-out forwards`;
+                    
+                    document.body.appendChild(firework);
+                    
+                    setTimeout(() => {
+                        if (firework.parentNode) firework.parentNode.removeChild(firework);
+                    }, 1000);
+                }, i * 150);
+            }
+        }
+        
+        function createHeartsRain(count) {
+            for (let i = 0; i < count; i++) {
+                setTimeout(() => {
+                    const heart = document.createElement('div');
+                    heart.className = 'rain-element';
+                    heart.innerHTML = '💖';
+                    heart.style.left = `${Math.random() * 100}vw`;
+                    heart.style.fontSize = `${20 + Math.random() * 30}px`;
+                    heart.style.animationDuration = `${3 + Math.random() * 5}s`;
+                    heart.style.animationDelay = `${Math.random() * 2}s`;
+                    
+                    document.body.appendChild(heart);
+                    
+                    setTimeout(() => {
+                        if (heart.parentNode) heart.parentNode.removeChild(heart);
+                    }, 8000);
+                }, i * 50);
+            }
+        }
+        
+        function createConfettiEffect() {
+            for (let i = 0; i < 100; i++) {
+                setTimeout(() => {
+                    const confetti = document.createElement('div');
+                    confetti.innerHTML = ['🎉', '🎊', '✨', '🌟', '💖'][Math.floor(Math.random() * 5)];
+                    confetti.style.position = 'fixed';
+                    confetti.style.fontSize = `${20 + Math.random() * 30}px`;
+                    confetti.style.left = `${Math.random() * 100}vw`;
+                    confetti.style.top = '-50px';
+                    confetti.style.zIndex = '9999';
+                    confetti.style.pointerEvents = 'none';
+                    confetti.style.animation = `confettiFall ${2 + Math.random() * 3}s linear forwards`;
+                    
+                    document.body.appendChild(confetti);
+                    
+                    setTimeout(() => {
+                        if (confetti.parentNode) confetti.parentNode.removeChild(confetti);
+                    }, 5000);
+                }, i * 20);
+            }
+        }
+        
+        // Rain Effect
+        function startRainEffect() {
+            const emojis = ['💖', '💗', '💓', '💕', '💞', '💟', '❣️', '💝', '🌸', '🌺', '🌷', '💐', '🌼', '🌹', '🥀', '💍', '👑', '✨', '🌟', '💫', '⭐', '🌙', '☀️', '🎁'];
+            
+            setInterval(() => {
+                for (let i = 0; i < 2; i++) {
+                    const element = document.createElement('div');
+                    element.className = 'rain-element';
+                    element.innerHTML = emojis[Math.floor(Math.random() * emojis.length)];
+                    
+                    const left = Math.random() * 100;
+                    const size = 20 + Math.random() * 40;
+                    const duration = 4 + Math.random() * 8;
+                    const delay = Math.random() * 5;
+                    const opacity = 0.5 + Math.random() * 0.5;
+                    
+                    element.style.left = `${left}vw`;
+                    element.style.fontSize = `${size}px`;
+                    element.style.opacity = opacity;
+                    element.style.animationDuration = `${duration}s`;
+                    element.style.animationDelay = `${delay}s`;
+                    
+                    document.body.appendChild(element);
+                    
+                    setTimeout(() => {
+                        if (element.parentNode) {
+                            element.parentNode.removeChild(element);
+                        }
+                    }, (duration + delay) * 1000);
+                }
+            }, 300);
+        }
+        
+        // Start all features
+        function startAllFeatures() {
+            loadSavedNotes();
+            startCounter();
+            startMusicPlayer();
+            startRainEffect();
+            setupFlippingCards();
+            startTypingLetter();
+            
+            // Initial hearts rain
+            createHeartsRain(30);
+        }
+        
+        // Add animation styles
+        const animationStyles = document.createElement('style');
+        animationStyles.innerHTML = `
+            @keyframes sparkleFloat {
+                0% { transform: translate(0, 0) scale(0) rotate(0deg); opacity: 1; }
+                100% { transform: translate(${Math.random() * 100 - 50}px, ${Math.random() * -100 - 50}px) scale(1) rotate(360deg); opacity: 0; }
+            }
+            
+            @keyframes fireworkExplode {
+                0% { transform: scale(0); opacity: 1; }
+                50% { transform: scale(1); opacity: 0.8; }
+                100% { transform: scale(0); opacity: 0; }
+            }
+            
+            @keyframes confettiFall {
+                0% { transform: translateY(0) rotate(0deg); opacity: 1; }
+                100% { transform: translateY(100vh) rotate(720deg); opacity: 0; }
+            }
+            
+            @keyframes shake {
+                0%, 100% { transform: translateX(0); }
+                25% { transform: translateX(-10px); }
+                75% { transform: translateX(10px); }
+            }
+        `;
+        document.head.appendChild(animationStyles);
+        
+        // Mobile support
+        document.addEventListener('touchstart', function() {}, { passive: true });
+    </script>
+</body>
+</html>
